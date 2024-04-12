@@ -2,17 +2,17 @@
 
 
 #include <iostream>
+#include <limits.h>
 using namespace std;
+
 
 int main()
 {
     //Declare an array
-    int arr[5] = {1,3,6,5,2};
-    int min,max;
+    int arr[5] = {1,3,4,5,2};
+    int min = INT_MAX,max = INT_MIN;
     //find maximum and minimum
-    max = arr[0];
-    min = arr[0];
-    for (int i = 1; i < 5; i++)
+    for (int i = 0; i < 5; i++)
     {
         if(max < arr[i]) max = arr[i];
         if(min > arr[i]) min = arr[i];

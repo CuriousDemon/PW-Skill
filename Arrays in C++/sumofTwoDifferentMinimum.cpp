@@ -2,6 +2,7 @@
 
 
 #include <iostream>
+#include <limits.h>
 using namespace std;
 
 int main()
@@ -9,23 +10,23 @@ int main()
     //Declare two array and variables
     int n = 5;
     int a[n] = {5,6,10,4,9};
-    int b[n] = {1,2,3,4,5};
+    int b[n] = {4,2,3,1,5};
     int idxa,idxb,min;
     //find minimum number index of a array
-    min = a[0];
+    min = INT_MAX;
     for (int i = 0; i < n; i++)
     {
-        if(min >= a[i]) 
+        if(min > a[i]) 
         {
             min = a[i];
             idxa = i;
         }
     }
     //find minimum number index of b array
-    min = b[0];
+    min = INT_MAX;
     for (int i = 0; i < n; i++)
     {
-        if(min >= b[i] && i != idxa) 
+        if(min > b[i] && i != idxa) 
         {
             min = b[i];
             idxb = i;
