@@ -25,7 +25,7 @@ int countSolutions(int n, int val)
 int main(){
 	
 	int n = 5;
-	int val = 1;
+	int val = 2;
 	
 	cout<<countSolutions(n, val);
 }
